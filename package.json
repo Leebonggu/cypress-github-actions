@@ -9,13 +9,16 @@
     "cypress:open": "cypress open",
     "cypress:chrome": "cypress run --browser chrome --config-file cypress/cypress.config.ts",
     "test:": "concurrently --kill-others \"pnpm dev\" \"pnpm cypress:open\"",
-    "test:chrome": "concurrently --kill-others \"pnpm dev\" \"pnpm cypress:chrome\""
+    "test:chrome": "concurrently --kill-others \"pnpm dev\" \"pnpm cypress:chrome\"",
+    "test": "start-server-and-test 'pnpm start' http://localhost:3000 'pnpm cypress:run'"
+    
   },
   "dependencies": {
     "axios": "^0.27.2",
     "concurrently": "^7.2.2",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "start-server-and-test": "^1.14.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
