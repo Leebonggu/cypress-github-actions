@@ -17,3 +17,5 @@ describe('initialize App', () => {
     cy.get('.main').contains('loading...')
   })
 })
+
+export {}
