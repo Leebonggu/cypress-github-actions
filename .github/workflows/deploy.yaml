@@ -22,4 +22,4 @@ jobs:
     - name: Install dependencies
       run: pnpm install
     - name: Run Cypress tests
-      run: pnpm cypress:chrome
+      run: pnpm test:chrome

@@ -7,18 +7,17 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "cypress:open": "cypress open",
+    "cypress:run": "cypress run --config-file cypress/cypress.config.ts",
     "cypress:chrome": "cypress run --browser chrome --config-file cypress/cypress.config.ts",
     "test:": "concurrently --kill-others \"pnpm dev\" \"pnpm cypress:open\"",
-    "test:chrome": "concurrently --kill-others \"pnpm dev\" \"pnpm cypress:chrome\"",
-    "test": "start-server-and-test 'pnpm dev' http://localhost:3000 'pnpm cypress:run'"
+    "test:chrome": "concurrently --kill-others \"pnpm dev\" \"pnpm cypress:chrome\""
     
   },
   "dependencies": {
     "axios": "^0.27.2",
     "concurrently": "^7.2.2",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "start-server-and-test": "^1.14.0"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
