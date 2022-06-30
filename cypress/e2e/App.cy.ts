@@ -7,14 +7,13 @@ describe('initialize App', () => {
   })
 
   it('Render Data', () => {
-    cy.intercept({
-      method: 'GET',
-      url: '/user',
-      hostname: 'localhost',
-    }).as('apiCheck')
+  //   cy.intercept({
+  //     method: 'GET',
+  //     url: '/user',
+  //     hostname: 'localhost',
+  //   }).as('apiCheck')
   
     // cy.wait('@apiCheck')
-    cy.get('.main').contains('Hello')
-    cy.get('.main').contains('John')
+    cy.get('.main').contains('loading...')
   })
 })

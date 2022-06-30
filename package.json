@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --config-file cypress/cypress.config.ts",
-    "cypress:chrome": "cypress run --browser chrome --config-file cypress/cypress.config.ts",
+    "cypress:chrome": "cypress run --config-file cypress/cypress.config.ts",
     "test:": "concurrently --kill-others \"pnpm dev\" \"pnpm cypress:open\"",
     "test:chrome": "concurrently --kill-others \"pnpm dev\" \"pnpm cypress:chrome\""
     
