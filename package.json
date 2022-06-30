@@ -7,7 +7,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "cypress:open": "cypress open",
-    "test": "concurrently --kill-others \"pnpm dev\" \"pnpm cypress:open\""
+    "cypress:chrome": "cypress run --browser chrome",
+    "test:": "concurrently --kill-others \"pnpm dev\" \"pnpm cypress:open\"",
+    "test:chrome": "concurrently --kill-others \"pnpm dev\" \"pnpm cypress:chrome\""
   },
   "dependencies": {
     "axios": "^0.27.2",
